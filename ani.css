@@ -1,0 +1,30 @@
+.a{
+    width:30%;
+    height: 3vh;
+    font-size: 3vh;
+    animation-name: aa;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+.a:hover{
+    animation-name:line;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+@keyframes line{
+    0%{
+        width:30%;
+    }
+    100%{
+        width:50%;
+    }
+
+}
+@keyframes aa{
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 30%;
+    }
+}

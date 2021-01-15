@@ -3,43 +3,7 @@ let cnt = 0;
 let cnt1 = 0;
 let line1 = 0;
 window.onload=function() { 
-    var canvas = document.getElementById("canvas1"); 
-    var context = canvas.getContext("2d"); 
-    context.beginPath();
-    for(cnt=0;cnt<=100;cnt++){
-        context.moveTo(0,line);
-        context.lineTo(line,1000);
-        context.moveTo(1000,line);
-        context.lineTo(line,0);
-        context.moveTo(1000,1000-line);
-        context.lineTo(line,1000);
-        context.moveTo(0,1000-line);
-        context.lineTo(line,0);
-        line = line+20;
-        cnt++;
-    }
-    
-    context.fill();
-    context.stroke();
-
-    context.beginPath(); 
-    context.moveTo(100,100); 
-    context.arcTo(200,100,200,200,100); 
-    context.lineTo(200,200); 
-    context.lineTo(100,200); 
-    context.quadraticCurveTo(50,200,50,150); 
-    context.bezierCurveTo(50,100,75,75,50,50);
-
-     var canvas = document.getElementById("canvas2"); 
-    var context = canvas.getContext("2d"); 
-
-    context.beginPath();
-    context.fillstyle = "red";
-    context.moveTo(100,100);
-    context.lineTo(100,200);
-    context.closePath();
-    context.stroke();
-    var canvas = document.getElementById("canvas2");
+    var canvas = document.getElementById("canvars")
         var ctx = canvas.getContext("2d");
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -73,11 +37,3 @@ window.onload=function() {
         setInterval(animation1,25);
         
 };
-function draw(){
-};
-/*
-function animation3(){
-            setInterval(animation1, 25);
-            setInterval(animation2, 30);
-        }
-        */
